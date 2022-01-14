@@ -1,0 +1,251 @@
+:root {
+  --font-family-title: PT Serif;
+  --font-family-text: "Poppins";
+  --font-family-footer: Montserrat;
+
+  /* --font-size-extra-large:2.25rem;
+  --font-size-large:1.125rem;
+  --font-size-normal:0.875rem;
+  --font-size-small:0.625rem; */
+
+  /* --font-size-extra-large:36px;
+  --font-size-large:18px;
+  --font-size-normal:14px;
+  --font-size-small:11px; */
+
+  --font-size-extra-large: 9.65vw;
+  --font-size-large: 4.8vw;
+  --font-size-normal: 3.75vw;
+  --font-size-small: 2.75vw;
+
+  /* --font-size-extra-large:calc(2.27rem + 0.5vw);
+  --font-size-large:18px;
+  --font-size-normal:14px;
+  --font-size-small:2.75vw; */
+
+  --font-weight: 400;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --bg-color: #FAFAFA;
+  --color: #000000;
+
+  /*** dark mode ***/
+
+  @media screen and (prefers-color-scheme:dark) {
+    --bg-color: #2f2f2f;
+    --color: #fdfdfd;
+  }
+
+}
+
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background-color: var(--bg-color);
+  width: 100%;
+  font-size: 100%;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: start;
+  align-content: space-around;
+  gap: 2.375rem;
+  padding: 15% 5% 20% 5%;
+}
+
+h1 {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-extra-large);
+  font-weight: var(--font-weight-bold);
+  color: var(--color);
+
+  letter-spacing: -1.62px;
+}
+
+.text-container {
+  width: 80%;
+}
+
+.text-container h2 {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-large);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color);
+  margin-bottom: 0.625rem;
+}
+
+.text-container p {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-normal);
+  color: var(--color);
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: start;
+}
+
+.card {
+  width: 40%;
+  position: relative;
+}
+
+.card:nth-child(2n) {
+  margin-top: 12.5%;
+}
+
+.card__img-container {
+  width: 90%;
+}
+
+.card__img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.card__text-rotate {
+  font-family: var(--font-family-title);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-normal);
+  color: var(--color);
+  text-transform: uppercase;
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+.card:nth-child(1) .card__text-rotate {
+  top: 18%;
+  right: -23%;
+}
+
+.card:nth-child(2) .card__text-rotate {
+  top: 14.5%;
+  right: -18.5%;
+}
+
+.card:nth-child(3) .card__text-rotate {
+  top: 11%;
+  right: -13%;
+}
+
+.card:nth-child(4) .card__text-rotate {
+  top: 13.5%;
+  right: -16.5%;
+}
+
+.card:nth-child(5) .card__text-rotate,
+.card:nth-child(6) .card__text-rotate {
+  top: 12%;
+  right: -14%;
+}
+
+.card__text {
+  font-family: var(--font-family-text);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color);
+}
+
+footer {
+  margin: 20% auto 4% auto;
+  width: 100%;
+  text-align: center;
+}
+
+footer p {
+  font-family: var(--font-family-footer);
+  font-size: var(--font-size-normal);
+  font-weight: var(--font-weight-bold);
+  color: #A9A9A9;
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --font-size-extra-large: calc(9.65vw * 0.33);
+    --font-size-large: calc(4.8vw * 0.33);
+    --font-size-normal: calc(3.75vw * 0.33);
+    --font-size-small: calc(2.75vw * 0.33);
+  }
+
+  header {
+    align-content: start;
+    padding: 7% 10% 6% 16%;
+  }
+
+  h1 {
+    width: 48%;
+    padding-bottom: 2rem;
+  }
+
+  .text-container {
+    width: 40%;
+    padding-top: 2rem;
+  }
+
+  main {
+    padding: 0 15%;
+    justify-content: space-around;
+  }
+
+  .card {
+    width: 26.5%;
+  }
+
+  .card:nth-child(2),
+  .card:nth-child(5) {
+    margin: 5%;
+  }
+
+  .card:nth-child(5) {
+    margin-top: 25%;
+  }
+
+  .card:nth-child(1) .card__text-rotate {
+    top: 13%;
+    right: -17%;
+  }
+
+  .card:nth-child(2) .card__text-rotate {
+    top: 11%;
+    right: -13.5%;
+  }
+
+  .card:nth-child(3) .card__text-rotate {
+    top: 8%;
+    right: -9.5%;
+  }
+
+  .card:nth-child(4) .card__text-rotate {
+    top: 10%;
+    right: -13%;
+  }
+
+  .card:nth-child(5) .card__text-rotate,
+  .card:nth-child(6) .card__text-rotate {
+    top: 8.5%;
+    right: -10.5%;
+  }
+
+  footer {
+    margin: 13% auto 2% auto;
+  }
+
+}
