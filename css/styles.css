@@ -3,25 +3,10 @@
   --font-family-text: "Poppins";
   --font-family-footer: Montserrat;
 
-  /* --font-size-extra-large:2.25rem;
-  --font-size-large:1.125rem;
-  --font-size-normal:0.875rem;
-  --font-size-small:0.625rem; */
-
-  /* --font-size-extra-large:36px;
-  --font-size-large:18px;
-  --font-size-normal:14px;
-  --font-size-small:11px; */
-
   --font-size-extra-large: 9.65vw;
   --font-size-large: 4.8vw;
   --font-size-normal: 3.75vw;
   --font-size-small: 2.75vw;
-
-  /* --font-size-extra-large:calc(2.27rem + 0.5vw);
-  --font-size-large:18px;
-  --font-size-normal:14px;
-  --font-size-small:2.75vw; */
 
   --font-weight: 400;
   --font-weight-semibold: 600;
