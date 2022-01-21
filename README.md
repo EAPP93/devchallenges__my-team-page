@@ -26,28 +26,35 @@
 ### important
 To use the dark mode you have to have your computer or browser configured in dark mode to show this is because the challenge did not require dark mode and I did not want to break the design
 
-### desktop
-![screenshot](./assets/desktop-light-1.PNG)
-![screenshot](./assets/desktop-light-2.PNG)
-![screenshot](./assets/desktop-dark-1.PNG)
-![screenshot](./assets/desktop-dark-2.PNG)
-### mobile
-![screenshot](./assets/mobile-light-1.PNG)
-![screenshot](./assets/mobile-light-2.PNG)
-![screenshot](./assets/mobile-dark-1.PNG)
-![screenshot](./assets/mobile-dark-2.PNG)
+<div style="display: flex; flex-direction:column; gap:0.5rem;">
+  <h2>Desktop</h2>
+  <div style="display: flex; gap: 0.5rem;">
+    <img width="50%" src="./assets/desktop-light-1.PNG" />
+    <img width="50%" src="./assets/desktop-light-2.PNG" />
+  </div>
+  <div style="display: flex; gap: 0.5rem;">
+    <img width="50%" src="./assets/desktop-dark-1.PNG" />
+    <img width="50%" src="./assets/desktop-dark-2.PNG" />
+  </div>
+</div>
+
+<div style="display: flex; flex-direction:column; gap:0.5rem;">
+  <h2>Mobile</h2>
+  <div style="display: flex; gap: 0.5rem;">
+    <img width="50%" src="./assets/mobile-light-1.PNG" />
+    <img width="50%" src="./assets/mobile-light-2.PNG" />
+  </div>
+  <div style="display: flex; gap: 0.5rem;">
+    <img width="50%" src="./assets/mobile-dark-1.PNG" />
+    <img width="50%" src="./assets/mobile-dark-2.PNG" />
+  </div>
+</div>
 
 ### Built With
-
-<!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
-
 - HTML
 - CSS
 
 ## Features
-
-<!-- List the features of your application or follow the template. Don't share the figma file here :) -->
-
 This application/site was created as a submission to a [DevChallenges](https://devchallenges.io/challenges) challenge. The [challenge](https://devchallenges.io/challenges/hhmesazsqgKXrTkYkt0U) was to build an application to complete the given user stories.
 
 ## Contact
